@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- taken from http://nrodwiki.rockshore.net/index.php/OpenLDBWS_SOAP_Query_Raw -->
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://thalesgroup.com/RTTI/2014-02-20/ldb/" xmlns:ns2="http://thalesgroup.com/RTTI/2010-11-01/ldb/commontypes">
+    <SOAP-ENV:Header>
+        <ns2:AccessToken>
+            <ns2:TokenValue>*** YOUR TOKEN GOES HERE ***</ns2:TokenValue>
+        </ns2:AccessToken>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <ns1:GetDepartureBoardRequest>
+            <ns1:numRows>10</ns1:numRows>
+            <ns1:crs>MAN</ns1:crs>
+        </ns1:GetDepartureBoardRequest>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

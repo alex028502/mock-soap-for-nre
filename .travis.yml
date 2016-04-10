@@ -1,0 +1,8 @@
+sudo: required
+language: node_js
+services:
+  - docker
+before_install:
+  - node deployment/build-message.js
+script:
+  - make -fdockermake test

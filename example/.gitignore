@@ -1,0 +1,7 @@
+/vendor/*
+/virtualenv
+/config.mk
+/.idea
+.pyc
+/example.py
+/test-example.py
