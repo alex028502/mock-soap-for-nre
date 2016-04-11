@@ -24,7 +24,7 @@ or that I might need in the future
 and arbitrary array name](mock-server/ArrayOfTypeSequence.php), and
 [a way to make a Zend Framework Soap service work on a server that can't handle
 simultaneous requests](mock-server/index.php)
-* [makefile](dockermake) that builds the docker image, and builds the
+* [makefile](docker.mk) that builds the docker image, and builds the
 .dockerignore file from the .gitignore file using a [script that translates the
 paths](./translate-gitignore-to-dockerignore.sh) and compares the ruby, python,
 php, and bundler versions your computer with those on the docker image.
@@ -51,13 +51,13 @@ make test MOCK_SERVER_PORT=9999 #or leave out the port if you are happy with def
 
 ```bash
 # make sure you have docker installed so that it doesn't require sudo and
-make -fdockermake test
+make -fdocker.mk test
 ```
 
 ### compare the two
 
 ```bash
-make -fdockermake compare
+make -fdocker.mk compare
 ```
 
 ## or just try the sample client without cucumber

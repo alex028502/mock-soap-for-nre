@@ -1,7 +1,7 @@
 Some deployment has to go in the root directory:
 * [travis.yml](../travis.yml)
 * [Dockerfile](../Dockerfile)
-* [dockermake](../dockermake)
+* [docker.mk](../docker.mk)
 
 Docker is really just used to control global dependencies on travis ci, and to
 avoid allow us to run most of ci process locally rather than having to push
