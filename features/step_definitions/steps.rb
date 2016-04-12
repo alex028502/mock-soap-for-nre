@@ -8,6 +8,11 @@ Given(/^the (right|wrong) wsdl url is being used/) do |arg|
   end
 end
 
+Given(/^the suds wsdl cache is cleared$/) do
+  `example/virtualenv/bin/clear-suds-cache #{ENV['TEST_WSDL']} 2>&1`
+  expect($?.exitstatus).to be(0)
+end
+
 Given(/^the station input "([^"]*)"$/) do |station_code|
   @station_code = station_code
 end

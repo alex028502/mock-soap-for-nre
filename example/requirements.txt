@@ -1,2 +1,4 @@
 nre-darwin-py==0.2.0
 suds-jurko==0.6
+
+git+https://github.com/alex028502/clear-suds-cache.git@b5dc7bc

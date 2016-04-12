@@ -1,13 +1,9 @@
 #this is from the same version of the lib as we install, but it doesn't have to be
 original_program=https://raw.githubusercontent.com/robert-b-clarke/nre-darwin-py/c3862d820bb93e3595b22064eb61300332a19764/example.py
 
-.PHONY: build clean clear-wsdl-cache
+.PHONY: build clean
 
 build: test-example.py virtualenv
-clear-wsdl-cache:
-	# it would be better to do this through suds so that we didn't delete caches
-	# that belong to other applications, but this will work here
-	rm -rf /tmp/suds
 test-example.py: example.py
 	echo "# this is a modified version of the production that allows you to inject a different" > $@
 	echo "# a different wsdl url using environment variable TEST_WSDL" >> $@

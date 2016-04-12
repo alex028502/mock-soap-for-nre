@@ -7,6 +7,7 @@ Feature: sample program
 
   Background:
     Given the right wsdl url is being used
+    And the suds wsdl cache is cleared
 
   Scenario: Happy Path
     Given the right api key is set
